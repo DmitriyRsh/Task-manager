@@ -1,0 +1,43 @@
+.notifications{
+    position: relative;
+    margin-bottom: 15px;
+    &__title{
+        font-size: rem(14);
+        padding-top: rem(20);
+        margin-bottom: rem(30);
+    }
+    &__subtitle{
+        margin-bottom: rem(15);
+        font-weight: 500;
+        font-size: rem(14);
+    }
+    &__items{
+        display: grid;
+        max-height: 53vh;
+        overflow: auto;
+    }
+    &__item{
+        margin-bottom: rem(8);
+        width: 100%;
+        min-height: rem(66);
+        background-color: var(--second-color);
+        border-radius: 15px;
+    }
+    &__contain{
+        padding: rem(8) rem(14);
+    }
+    &__time{
+        font-style: italic;
+        font-weight: 400;
+        font-size: rem(10);
+        margin-bottom: rem(2);
+    }
+    &__text{
+        font-size: rem(12);
+        line-height: 15px;
+    }
+    &__item_active{
+        background: #6368D9;
+        color: var(--white);
+    }
+}

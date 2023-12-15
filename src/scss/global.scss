@@ -1,0 +1,62 @@
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--main-color);
+    overflow: auto;
+    min-width: 300px;
+    background-color: var(--side-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-fluid{
+    max-width: 286px;
+    margin: 0 auto;
+    background-color: var(--background);
+    border-radius: 20px 20px 0 0;
+    padding: 0 30px;
+    width: 85%;
+    position: relative;
+    overflow: hidden;
+}
+.container {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: var(--background);
+    border-radius: 20px;
+    width: 85%;
+    position: relative;
+}
+:root{
+    --side-color: #D3C7F5;
+    --background: #EFEBFB;
+    --main-color: #6369D9;
+    --second-color: #D1D0F9;
+    --white: #fff;
+    --create: #fff;
+    --icon-theme: center / cover url(../../img/moon.svg);
+    --theme: #6369D9;
+}
+:root[data-theme="dark"]{
+    --side-color: #7967ab;
+    --background: #46399c;
+    --main-color: #0f0472;
+    --second-color: #7445d2;
+    --white: #060409;
+    --create: #744bbc;
+    --icon-theme: center / cover url(../../img/sun.svg);
+    --theme: #3fe1f0;
+}
+.border{
+    border-radius: 20px !important;
+}

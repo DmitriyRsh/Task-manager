@@ -1,0 +1,114 @@
+.profile{
+    overflow: auto;
+    max-height: 64vh;
+    margin-bottom: 15px;
+    &__box{
+        max-width: 140px;
+    }
+    &__title{
+        padding-top: rem(15);
+        font-size: rem(14);
+        margin-bottom: 30px;
+    }
+    &__contain{
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(40);
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #6368D9;
+        margin-right: rem(22);
+    }
+    &__text{
+        line-height: 20px;
+        font-size: rem(14);
+        margin-bottom: 5px;
+    }
+    &__subtext{
+        font-weight: 500;
+        font-size: rem(12);
+        &:last-of-type{
+            margin-bottom: rem(10);
+        }
+    }
+    &__btn{
+        width: 101px;
+        height: 20px;
+    }
+    &__buttons{
+        display: grid;
+    }
+    &__button{
+        display: flex;
+        border: none;
+        align-items: center;
+        height: 36px;
+        cursor: pointer;
+        color: var(--main-color);
+        border-radius: 30px;
+        background-color: var(--second-color);
+        font-size: rem(12);
+        font-weight: 500;
+        @extend %hover;
+        margin-bottom: rem(7);
+    }
+    &__svg{
+        width: 16px;
+        height: 16px;
+        padding-left: rem(17);
+        margin-right: rem(7);
+    }
+}
+.btn{
+    padding: 0 10px;
+    color: var(--main-color);
+    background-color: var(--second-color);
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    font-size: rem(10);
+    @extend %hover;
+    cursor: pointer;
+}
+.complete{
+    &__box{
+        display: flex;
+        width: 100%;
+        border-radius: 20px;
+        background: #6368D9;
+        margin-bottom: rem(18);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__btn{
+        width: 80px;
+        height: 23px;
+    }
+    &__text{
+        font-size: rem(10);
+        color: var(--white);
+        margin-bottom: rem(15);
+        max-width: rem(156);
+    }
+    &__subtext{
+        max-width: rem(156);
+        font-size: rem(14);
+        color: var(--white);
+        line-height: 17px;
+        margin-bottom: rem(20);
+    }
+    &__contain{
+        padding-top: rem(22);
+        padding-left: rem(18);
+    }
+    &__img-holder{
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        width: 106px;
+        height: 117px;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+    "title": "Registration"
+})
+<body>
+    <main class="container border">
+        <h1 class="Edit__title">Edit profile</h1>
+        <section class="Edit">
+            <form class="Edit__form" action="#">
+                <div class="input-editbox">
+                    <input class="Edit__input" data-email="true" id="emailEdit" type="text" name="useremail" placeholder="Email" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="passwordEdit" type="password" name="userpass" placeholder="Password" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="nameEdit" type="text" name="name" placeholder="Your name" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="lastnameEdit" type="text" name="lastName" placeholder="Your last name" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="cityEdit" type="text" name="city" placeholder="Your city" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="dateEdit" type="date" name="dateEdit" placeholder="What date is your birthday?" value="">
+                </div>
+                <button class="Edit__btn" type="submit">Submit</button>
+                <a class="Edit__link" href="#">Back</a>
+            </form> 
+        </section>
+    </main>
+    <script src="js/editProfile.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,400&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Registration</title>
+</head>
+<body>
+    <main class="container border">
+        <h1 class="Edit__title">Edit profile</h1>
+        <section class="Edit">
+            <form class="Edit__form" action="#">
+                <div class="input-editbox">
+                    <input class="Edit__input" data-email="true" id="emailEdit" type="text" name="useremail" placeholder="Email" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="passwordEdit" type="password" name="userpass" placeholder="Password" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="nameEdit" type="text" name="name" placeholder="Your name" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="lastnameEdit" type="text" name="lastName" placeholder="Your last name" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="cityEdit" type="text" name="city" placeholder="Your city" value="">
+                </div>
+                <div class="input-editbox">
+                    <input class="Edit__input" id="dateEdit" type="date" name="dateEdit" placeholder="What date is your birthday?" value="">
+                </div>
+                <button class="Edit__btn" type="submit">Submit</button>
+                <a class="Edit__link" href="#">Back</a>
+            </form> 
+        </section>
+    </main>
+    <script src="js/editProfile.js"></script>
+</body>
+</html>

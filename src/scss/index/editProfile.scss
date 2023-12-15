@@ -1,0 +1,80 @@
+.Edit{
+    overflow-y: auto;
+    max-height: 65vh;
+    margin-bottom: 62px;
+    &__title{
+        padding-top: rem(30);
+        text-align: center;
+        font-size: rem(18);
+        margin-bottom: rem(20);
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input{
+        border-radius: 30px;
+        background: var(--second-color);
+        color: var(--main-color);
+        font-size: rem(16);
+        width: 90%;
+        padding: 6px 15px;
+        border: none;
+        outline-color: var(--main-color);
+        &::placeholder{
+            color: var(--main-color);
+        }
+    }
+    &__btn{
+        border-radius: 30px;
+        background: var(--main-color);
+        max-width: rem(261);
+        width: 100%;
+        height: 36px;
+        font-size: rem(16);
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+        @extend %hover;
+        letter-spacing: 0.32px;
+        font-weight: 600;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: rem(18);
+        &:disabled{
+            opacity: 0.5;
+            &:hover{
+                background: var(--main-color);
+            }
+        }
+    }
+    &__account{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-weight: 400;
+        font-size: rem(14);
+        gap: 5px;
+        max-width: rem(261);
+    }
+    &__link{
+        font-weight: 400;
+        color: #67c6b6;
+        margin-bottom: rem(20);
+        font-size: rem(16);
+        &:hover{
+            color: $hover;
+        }
+    }
+}
+.input-editbox{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:last-of-type{
+        margin-bottom: 40px;
+    }
+}

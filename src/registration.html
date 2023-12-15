@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+    "title": "Registration"
+})
+<body>
+    <main class="container border">
+        <h1 class="Registration__title">Create new account</h1>
+        <section class="Registration">
+            <form class="Registration__form" action="#">
+                <div class="input-box">
+                    <input class="Registration__input" data-email="true" id="email" type="text" name="useremail" placeholder="Email" value="">
+                </div>
+                <div class="input-box">
+                    <input class="Registration__input" id="password" type="password" name="userpass" placeholder="Password" value="">
+                </div>
+                <div class="input-box">
+                    <input class="Registration__input" data-repeatpass="true" id="repeatpass" type="password" name="repeatpass" placeholder="Re-enter password" value="">
+                </div>
+                <div class="input-box">
+                    <input class="Registration__input" id="name" type="text" name="name" placeholder="Your name" value="">
+                </div>
+                <div class="input-box">
+                    <input class="Registration__input" id="lastname" type="text" name="lastName" placeholder="Your last name" value="">
+                </div>
+                <div class="input-box">
+                    <input class="Registration__input" id="city" type="text" name="city" placeholder="Your city" value="">
+                </div>
+                <div class="input-box">
+                    <input class="Registration__input" id="date" type="date" name="date" placeholder="What date is your birthday?" value="">
+                </div>
+                <button class="Registration__btn" type="submit">Create</button>
+                <div class="Registration__account">
+                    <p class="Registration__text">Already have an account?</p>
+                    <a href="#" class="Registration__link">Login</a>
+                </div>
+            </form> 
+        </section>
+    </main>
+    <script src="js/Registration.js"></script>
+</body>
+</html>

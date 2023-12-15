@@ -1,0 +1,534 @@
+@media (max-width: 360px) {
+    .create__textarea, .create__input {
+        width: 85%;
+    }
+    .menu{
+        max-width: 286px;
+    }
+    .task__img{
+        width: 100%;
+    }
+    .task__img-holder{
+        &::after{
+            display: none;
+        }
+    }
+    .input-editbox{
+        width: 90%;
+    }
+    .create__box{
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .create__form{
+        max-height: 66vh;
+    }
+}
+@media (min-width: 360px) {
+    .create__textarea{
+        height: 100px;
+    }
+    html{
+        font-size: calc(16px + (30 - 16) *((100vw - 320px) / (1140 - 320)));
+    }
+    .complete__img {
+        width: calc(106px + (230 - 106) *((100vw - 320px) / (1140 - 320)));
+        height: calc(117px + (230 - 117) *((100vw - 320px) / (1140 - 320)));
+    }
+    .container, .container-fluid{
+        max-width: 1140px;
+    }
+    .today__title{
+        padding-left: 40px;
+    }
+    .today__item{
+        width: 90%;
+        min-height: rem(77);
+        margin: 0 auto 8px auto;
+    }
+    .profile__contain{
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    .profile__buttons{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+    }
+    .profile__logOut{
+        width: 200%;
+    }
+    .input-editbox{
+        display: flex;
+        justify-content: center;
+    }
+    .profile__button{
+        height: 37px;
+    }
+    .create__form{
+        margin: 0 auto;
+        max-width: 350px;
+    }
+    .Registration__text{
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 540px) {
+    .container-fluid{
+        padding: 0 15px;
+    }
+    .menu{
+        padding: 0 15px 20px;
+    }
+    .container{
+        padding: 0 15px;
+    }
+    .create__box{
+        padding-left: 0 !important;
+    }
+}
+@media (min-width: 540px) {
+    .create__box{
+        padding-top: 30px;
+    }
+    .create__arrow{
+        width: 30px;
+        height: 30px;
+    }
+    .Settings__exit {
+        width: 27px;
+        height: 27px;
+    }
+    .create__form{
+        margin: 0 auto;
+        max-width: 440px;
+    }
+    .profile__title{
+        padding-top: 30px;
+    }
+    .complete__btn{
+        margin-bottom: 20px;
+    }
+    .complete__box {
+        max-width: 420px;
+        margin: 0 auto 25px auto;
+    }
+    .complete__subtext{
+        line-height: 1.4;
+    }
+    .profile__contain{
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .btn{
+        font-size: 17px;
+    }
+    .profile__btn{
+        width: 150px;
+        height: 35px;
+    }
+    .complete__btn{
+        width: 100px;
+        height: 30px;
+    }
+    .profile__img{
+        width: 150px;
+        height: 150px;
+    }
+    .profile__text{
+        line-height: 25px;
+    }
+    .notifications__item{
+        width: 90%;
+        margin: 0 auto rem(8) auto;
+    }
+    .notifications__title, .notifications__subtitle{
+        text-align: center;
+    }
+    .notifications__title{
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    .notifications__item{
+        min-height: 90px;
+    }
+    .notifications__text{
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .today__title{
+        padding-left: 60px;
+    }
+    .welcome__img{
+        transform: scale(1.5) rotate(-21.457deg);
+    }
+    .welcome__box{
+        &::before{
+            transform: scale(1.5);
+        }
+        &::after{
+            transform: scale(1.5);
+        }
+    }
+    .done {
+        width: 17px;
+        height: 20px;
+        bottom: 10px;
+    }
+    .delete {
+        width: 20px;
+        height: 20px;
+    }
+    .today__item{
+        width: 80%;
+        min-height: rem(77);
+        margin: 0 auto 8px auto;
+    }
+    .welcome__input{
+        font-size: rem(14);
+    }
+    .welcome__btn{
+        font-size: rem(14);
+        height: rem(26);
+    }
+    .task-next{
+        right: rem(26);
+        bottom: 35px;
+        svg{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .Registration__input{
+        font-size: 18px;
+    }
+    .Registration__btn{
+        margin-top: 40px;
+    }
+    .Registration__text, .Registration__link{
+        font-size: 18px;
+    }
+}
+@media (min-width: 620px) {
+    .profile__buttons{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .profile__button{
+        height: 43px;
+    }
+    .Edit__btn{
+        height: 45px;
+    }
+    .profile__logOut{
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .create__box{
+        padding-left: rem(85);
+    }
+}
+@media (min-width: 767px) {
+    .today__title{
+        margin-bottom: 10px;
+    }
+    .create__textarea{
+        min-height: rem(100);
+    }
+    .create__form{
+        display: grid;
+        max-width: 880px;
+        padding: 0 15px;
+        margin: 0 auto;
+        grid-template-areas: 
+        'subtitle input .'
+        'time time-input .'
+        'category items .'
+        'checkboxes Description .'
+        'btn . textarea';
+        column-gap: 25px;
+    }
+    .top-area {
+        grid-area: subtitle;
+    }
+    .top-area-title {
+        grid-area: input;
+    }
+    .area-time {
+        grid-area: time;
+    }
+    .time-input {
+        grid-area: time-input;
+    }
+    .area-category {
+        grid-area: category;
+    }
+    .create__items {
+        grid-area: items;
+    }
+    .create__box{
+        justify-content: center;
+    }
+    .create__arrow{
+        width: 40px;
+        height: 40px;
+    }
+    .create__textarea {
+        grid-area: textarea;
+        grid-column: span 2;
+        width: 93%;
+    }
+    .Description-area {
+        grid-area: Description;
+    }
+    .create__checkboxes {
+        grid-area: checkboxes;
+        transform: scale(1.2);
+        max-width: 50px;
+        display: flex;
+        padding-left: 10px;
+        padding-top: 10px;
+        gap: 20px;
+    }
+    .create__buttons {
+        grid-area: btn;
+        align-items: center;
+        padding: 0;
+    }
+    .create__btn{
+        margin-bottom: 0;
+    }
+    .create__reset{
+        transform: scale(1.5);
+    }
+    .create__checkboxes {
+        transform: scale(1.4);
+    }
+    .input-editbox{
+        margin-bottom: 20px;
+    }
+    .Settings__exit {
+        width: 35px;
+        height: 35px;
+    }
+    .Edit__btn{
+        max-width: 377px;
+        font-size: 22px;
+    }
+    .Edit__input{
+        max-width: 650px;
+        width: 100%;
+        font-size: 23px;
+    }
+    .profile__buttons{
+        grid-template-columns: 1fr 1fr;
+    }
+    .profile__button{
+        &:last-of-type{
+            width: 200%;
+        }
+    }
+    .complete__text{
+        font-size: 15px;
+    }
+    .profile__text{
+        font-size: 21px;
+    }
+    .profile__subtext{
+        font-size: 18px;
+    }
+    .profile__button a{
+        font-size: 18px;
+    }
+    .complete__subtext{
+        font-size: 20px;
+    }
+    .profile__button{
+        height: 40px;
+    }
+    .complete__box {
+        max-width: 600px;
+        margin: 0 auto 25px auto;
+    }
+    .today__item{
+        min-height: 115px;
+    }
+    .today__subtext{
+        font-size: 17px;
+        margin-bottom: rem(5);
+        max-width: rem(340);
+    }
+    .notifications__text{
+        font-size: 17px;
+    }
+    .today__title{
+        padding-left: 0;
+        text-align: center;
+    }
+    .today__contain{
+        padding: 10px 24px;
+    }
+    .today__text{
+        font-size: 17px;
+    }
+    .today__item{
+        margin: 0 auto 15px auto;
+        max-width: 595px;
+        width: 100%;
+    }
+    .today__time{
+        font-size: 17px;
+    }
+    .welcome__img{
+        transform: scale(2) rotate(-21.457deg);
+    }
+    .input-box{
+        width: 487px;
+        margin-bottom: 15px;
+    }
+    .Registration__title{
+        padding-top: 25px;
+    }
+    .Registration__input{
+        font-size: 26px;
+    }
+    .welcome__box{
+        &::before{
+            transform: scale(1.7);
+        }
+        &::after{
+            transform: scale(1.7);
+        }
+    }
+    .Registration__btn{
+        max-width: 361px;
+        font-size: 26px;
+        height: 50px;
+    }
+    .task-next{
+        right: rem(46);
+        cursor: pointer;
+        bottom: 65px;
+        svg{
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .profile{
+        max-height: 53vh;
+    }
+}
+@media (min-width: 992px) {
+    .profile__button{
+        height: 50px;
+    }
+    .profile__button{
+        &:last-of-type{
+            width: 100%;
+        }
+    }
+    .today__title{
+        font-size: 30px;
+    }
+    .today__text{
+        font-size: 20px;
+    }
+    .today__time, .today__subtext{
+        font-size: 18px;
+    }
+    .menu__link, .menu__link_home, .menu__icon{
+        transform: scale(1.4);
+    }
+    .menu__inner{
+        gap: 60px;
+    }
+    .menu{
+        padding: 0 30px 30px;
+    }
+    .profile__button a{
+        font-size: 20px;
+    }
+    .create__checkboxes {
+        transform: scale(1.6);
+    }
+    .Settings__exit {
+        width: 45px;
+        height: 45px;
+    }
+    .complete__btn{
+        width: 130px;
+        height: 40px;
+    }
+    .profile__buttons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .complete__box{
+        margin-bottom: 30px;
+    }
+    .btn{
+        font-size: 20px;
+    }
+    .profile__title{
+        padding-left: 50px;
+    }
+    .profile__btn{
+        width: 170px;
+        height: 40px;
+    }
+    .today__item{
+        max-width: 795px;
+    }
+    .profile__text{
+        line-height: 35px;
+    }
+    .notifications__item{
+        max-width: 795px;
+    }
+    .done {
+        width: 21px;
+        height: 22px;
+        right: 35px;
+    }
+    .delete {
+        width: 23px;
+        height: 23px;
+    }
+    .today__btn{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width: 1139px) {
+    .container{
+        min-height: 80vh;
+    }
+    .container-fluid{
+        min-height: 70vh;
+    }
+}
+@media (min-width: 1140px) {
+    .complete__box{
+        margin-bottom: rem(40);
+    }
+    .container-fluid{
+        max-height: 692px;
+        height: 100%;
+    }
+    .Settings{
+        min-height: 770px;
+    }
+    .container{
+        max-height: 770px;
+        height: 100%;
+    }
+    html{
+        font-size: 30px;
+    }
+    .complete__img {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+

@@ -1,0 +1,38 @@
+.Settings{
+    padding-top: rem(40);
+    position: relative;
+    min-height: 70vh;
+    &__theme{
+        background: var(--icon-theme);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__subtitle{
+        font-weight: 400;
+        font-size: rem(20);
+        color: var(--theme);
+    }
+    &__exit{
+        position: absolute;
+        background: center / cover url(../../img/arrow-left.svg);
+        width: 20px;
+        height: 20px;
+        top: rem(45);
+        left: 0;
+        cursor: pointer;
+    }
+    &__contain{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title{
+        font-weight: 400;
+        font-size: rem(22);
+        margin-bottom: rem(25);
+        text-align: center;
+    }
+}

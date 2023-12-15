@@ -1,0 +1,83 @@
+.Registration{
+    overflow: auto;
+    max-height: 61vh;
+    margin-bottom: 30px;
+    &__title{
+        padding-top: rem(20);
+        text-align: center;
+        font-size: rem(18);
+        margin-bottom: rem(20);
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input{
+        border-radius: 30px;
+        background: var(--second-color);
+        color: var(--main-color);
+        font-size: rem(16);
+        width: 90%;
+        padding: 6px 15px;
+        border: none;
+        outline-color: var(--main-color);
+        &::placeholder{
+            color: var(--main-color);;
+        }
+    }
+    &__btn{
+        border-radius: 30px;
+        background: $main-color;
+        max-width: 261px;
+        width: 100%;
+        height: 36px;
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+        @extend %hover;
+        letter-spacing: 0.32px;
+        font-weight: 600;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: rem(18);
+        &:disabled{
+            opacity: 0.5;
+            &:hover{
+                background: $main-color;
+            }
+        }
+    }
+    &__account{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-weight: 400;
+        font-size: rem(14);
+        gap: 5px;
+        max-width: rem(261);
+    }
+    &__link{
+        &:hover{
+            color: $hover;
+        }
+    }
+    &__text{
+        color: #9C98A1;
+    }
+}
+.input-box{
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.error-label{
+    color: #9f2525;
+    padding-left: 10px;
+    font-size: 13px;
+}
+.error{
+    input {
+        border: 1.5px solid #9f2525;
+    }
+}

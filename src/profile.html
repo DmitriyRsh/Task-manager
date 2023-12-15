@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+    "title": "Profile"
+})
+<body>
+    <main class="container-fluid">
+        <h1 class="profile__title">Profile</h1>
+        <section class="profile">
+                    <div class="profile__contain"></div>
+                    <div class="complete__box">
+                        <div class="complete__contain">
+                            <p class="complete__subtext">You have completed 103 task!</p>
+                            <button class="btn complete__btn">Details</button>
+                        </div>
+                        <div class="complete__img-holder">
+                            <img class="complete__img" src="@img/profile.svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="profile__buttons">
+                        <button class="profile__button profile__information">
+                            <img class="profile__svg" src="@img/profile-1.svg" alt="img">
+                            <a class="profile__link" href="#">Account information</a>
+                        </button>
+                        <button class="profile__button profile__settings">
+                            <img class="profile__svg" src="@img/profile-2.svg" alt="img">
+                            <a class="profile__link" href="#">Settings</a>
+                        </button>
+                        <button class="profile__button profile__logOut">
+                            <img class="profile__svg" src="@img/profile-3.svg" alt="img">
+                            <a class="profile__link" href="#">Log out</a>
+                        </button>
+                    </div>
+        </section>
+    </main>
+    <section class="menu">
+        <div class="menu__inner">
+            <a class="menu__link_home" href="#">
+                <img src="@img/menu-1.svg" alt="menu">
+            </a>
+            <a class="menu__link menu__link_favorite" href="#">
+                <img src="@img/menu-2.svg" alt="menu">
+            </a>
+            <a class="menu__icon" href="#">
+                <img src="@img/icon-plus.svg" alt="menu">
+            </a>
+            <a class="menu__link menu__link_notifications" href="#">
+                <img src="@img/menu-4.svg" alt="menu">
+            </a>
+            <a class="menu__link menu__link_profile menu__link_active" href="#">
+                <img src="@img/menu-5.svg" alt="menu">
+            </a>
+        </div>
+    </section>
+    <script src="js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+    "title": "Notifications"
+})
+<body>
+    <main class="container-fluid">
+        <section class="notifications">
+                    <h1 class="notifications__title">Notifications</h1>
+                    <h1 class="notifications__subtitle">Today</h1>
+                    <div class="notifications__items">
+                            <div class="notifications__item notifications__item_active">
+                                <div class="notifications__contain">
+                                    <p class="notifications__time">4 min ago</p>
+                                    <p class="notifications__text">Shafa, your Design and Documentation
+                                        meeting should start right now.</p>
+                                </div>
+                            </div>
+                        
+                        <div class="notifications__item">
+                            <div class="notifications__contain">
+                                <p class="notifications__time">2 hours ago</p>
+                                <p class="notifications__text">Congrats, your Mental health online class
+                                    is now completed.</p>
+                            </div>
+                        </div>
+                        <div class="notifications__item">
+                            <div class="notifications__contain">
+                                <p class="notifications__time">3 hours ago</p>
+                                <p class="notifications__text">Shafa, your Mental health online class
+                                    should start right now.</p>
+                            </div>
+                        </div>
+                        <div class="notifications__item">
+                            <div class="notifications__contain">
+                                <p class="notifications__time">6 hours ago</p>
+                                <p class="notifications__text">Your Updating design portfolio is still in
+                                    progress. Do you want to complete it?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+        </section>
+    </main>
+    <section class="menu">
+        <div class="menu__inner">
+            <a class="menu__link_home" href="#">
+                <img src="@img/menu-1.svg" alt="menu">
+            </a>
+            <a class="menu__link menu__link_favorite" href="#">
+                <img src="@img/menu-2.svg" alt="menu">
+            </a>
+            <a class="menu__icon" href="#">
+                <img src="@img/icon-plus.svg" alt="menu">
+            </a>
+            <a class="menu__link menu__link_notifications menu__link_active" href="#">
+                <img src="@img/menu-4.svg" alt="menu">
+            </a>
+            <a class="menu__link menu__link_profile" href="#">
+                <img src="@img/menu-5.svg" alt="menu">
+            </a>
+        </div>
+    </section>
+    <script src="js/notifications.js"></script>
+</body>
+</html>
+
+

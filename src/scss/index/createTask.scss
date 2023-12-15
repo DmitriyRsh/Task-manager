@@ -1,0 +1,124 @@
+.create{
+    margin-bottom: 30px;
+    &__form{
+        overflow: auto;
+        max-height: 70vh;
+    }
+    &__arrow{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    &__box{
+        padding-top: rem(56);
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(33);
+    }
+    &__title{
+        font-size: rem(18);
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: rem(14);
+        margin-bottom: 5px;
+    }
+    &__input{
+        border-radius: 20px;
+        border: 1px solid #6368D9;
+        padding: 8px 15px;
+        max-width: rem(256);
+        width: 100%;
+        outline-color: var(--main-color);
+        margin-bottom: rem(15);
+        font-weight: 500;
+        font-size: rem(14);
+        background-color: var(--create);
+        color: var(--main-color);
+    }
+    &__item{
+        background-color: var(--second-color);
+        color: var(--main-color);
+        margin-bottom: rem(4);
+        margin-right: rem(5);
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: rem(12);
+        padding: 4px 15px;
+        min-width: rem(40);
+        text-align: center;
+        @extend %hover;
+        cursor: pointer;
+        border: none;
+        &:disabled{
+            &:hover{
+                background-color: var(--second-color);
+            }
+        }
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: rem(15);
+    }
+    &__textarea{
+        padding: 10px 15px;
+        outline-color: var(--main-color);
+        border-radius: 20px;
+        border: 1px solid #6368D9;
+        max-width: rem(256);
+        width: 100%;
+        height: rem(107);
+        resize: none;
+        font-weight: 500;
+        font-size: rem(14);
+        color: var(--main-color);
+        background-color: var(--create);
+        margin-bottom: rem(20);
+    }
+    &__btn{
+        border-radius: 30px;
+        background: var(--main-color);
+        max-width: rem(261);
+        width: rem(157);
+        height: rem(30);
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+        @extend %hover;
+        letter-spacing: 0.32px;
+        font-weight: 500;
+        font-size: rem(12);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: rem(10);
+        &:disabled{
+            opacity: 0.5;
+            &:hover{
+                background: var(--main-color);
+            }
+        }
+    }
+    &__reset{
+        width: 39px;
+        height: 30px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        border: none;
+        background-color: var(--second-color);
+        cursor: pointer;
+        @extend %hover;
+        margin-right: rem(10);
+        svg{
+            transform: translateX(-10px);
+        }
+        
+    }
+    &__buttons{
+        display: flex;
+        padding-left: rem(47);
+    }
+}
+.active-category{
+    background-color: $hover;
+}
