@@ -60,3 +60,6 @@ body {
 .border{
     border-radius: 20px !important;
 }
+input::placeholder{
+    font-size: inherit;
+}

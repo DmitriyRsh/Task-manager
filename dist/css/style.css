@@ -438,6 +438,10 @@ body {
   border-radius: 20px !important;
 }
 
+input::placeholder {
+  font-size: inherit;
+}
+
 .task {
   text-align: center;
   margin-top: 87px;
